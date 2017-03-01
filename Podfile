@@ -11,4 +11,5 @@ target 'xuexi' do
   # Pods for xuexi
   pod 'Alamofire'
   pod 'SDWebImage'
+  pod 'SwiftyJSON'
 end

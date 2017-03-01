@@ -26,6 +26,43 @@ let QQKey = "SAFBuaifvqQrN9Bd"
 let nsAppId = "1181796879"
 
 
+extension UIView {
+    
+    func x () -> Float
+    {
+        return Float(self.frame.origin.x)
+    }
+    
+    func y () -> Float
+    {
+        return Float(self.frame.origin.y)
+    }
+    
+    func w () -> Float
+    {
+        return Float(self.frame.width)
+    }
+    
+    func h () -> Float
+    {
+        return Float(self.frame.height)
+    }
+    
+    func xw () -> Float
+    {
+        return self.x() + self.w()
+    }
+    
+    func yh () -> Float
+    {
+        return self.y() + self.h()
+    }
+    
+    
+}
+
 class Public: NSObject {
  
 }
+
+

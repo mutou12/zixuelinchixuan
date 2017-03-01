@@ -19,7 +19,8 @@
 		2F379FBB1E65226F0024732B /* Linmmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F379FBA1E65226F0024732B /* Linmmodel.swift */; };
 		2F379FBD1E652F8D0024732B /* LinmoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F379FBC1E652F8D0024732B /* LinmoTableViewCell.swift */; };
 		2F379FBF1E6543830024732B /* Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F379FBE1E6543830024732B /* Public.swift */; };
-		2F379FC21E65447F0024732B /* HKhttps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F379FC11E65447F0024732B /* HKhttps.swift */; };
+		2F379FC21E65447F0024732B /* hkhttps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F379FC11E65447F0024732B /* hkhttps.swift */; };
+		2FB290831E66A3E400E1CE46 /* ShuyouTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB290821E66A3E400E1CE46 /* ShuyouTableViewCell.swift */; };
 		D8517429511E4A686363CD8F /* Pods_xuexi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA58C0C7FBEADEBD3FD865D /* Pods_xuexi.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +40,8 @@
 		2F379FBA1E65226F0024732B /* Linmmodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linmmodel.swift; sourceTree = "<group>"; };
 		2F379FBC1E652F8D0024732B /* LinmoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinmoTableViewCell.swift; sourceTree = "<group>"; };
 		2F379FBE1E6543830024732B /* Public.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Public.swift; sourceTree = "<group>"; };
-		2F379FC11E65447F0024732B /* HKhttps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKhttps.swift; sourceTree = "<group>"; };
+		2F379FC11E65447F0024732B /* hkhttps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hkhttps.swift; sourceTree = "<group>"; };
+		2FB290821E66A3E400E1CE46 /* ShuyouTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuyouTableViewCell.swift; sourceTree = "<group>"; };
 		75E56379998537ABC6AFCF18 /* Pods-xuexi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuexi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xuexi/Pods-xuexi.debug.xcconfig"; sourceTree = "<group>"; };
 		D4D03BEBA44E1C9EB5E1AD6A /* Pods-xuexi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuexi.release.xcconfig"; path = "Pods/Target Support Files/Pods-xuexi/Pods-xuexi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				2F379FBC1E652F8D0024732B /* LinmoTableViewCell.swift */,
 				2F379FB01E6507430024732B /* BeitiekuViewController.swift */,
 				2F379FB21E65075C0024732B /* ShuyouquanViewController.swift */,
+				2FB290821E66A3E400E1CE46 /* ShuyouTableViewCell.swift */,
 				2F379FB41E65076C0024732B /* WoViewController.swift */,
 				2F379FA21E60131C0024732B /* Main.storyboard */,
 				2F379FA51E60131D0024732B /* Assets.xcassets */,
@@ -106,7 +109,7 @@
 		2F379FC01E6544600024732B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				2F379FC11E65447F0024732B /* HKhttps.swift */,
+				2F379FC11E65447F0024732B /* hkhttps.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -256,10 +259,11 @@
 				2F379FBB1E65226F0024732B /* Linmmodel.swift in Sources */,
 				2F379FBF1E6543830024732B /* Public.swift in Sources */,
 				2F379FB51E65076C0024732B /* WoViewController.swift in Sources */,
-				2F379FC21E65447F0024732B /* HKhttps.swift in Sources */,
+				2F379FC21E65447F0024732B /* hkhttps.swift in Sources */,
 				2F379F9F1E60131C0024732B /* AppDelegate.swift in Sources */,
 				2F379FB71E6510620024732B /* Linchitabbar.swift in Sources */,
 				2F379FBD1E652F8D0024732B /* LinmoTableViewCell.swift in Sources */,
+				2FB290831E66A3E400E1CE46 /* ShuyouTableViewCell.swift in Sources */,
 				2F379FB31E65075C0024732B /* ShuyouquanViewController.swift in Sources */,
 				2F379FB11E6507430024732B /* BeitiekuViewController.swift in Sources */,
 			);

@@ -7,15 +7,73 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class ShuyouquanViewController: UIViewController {
+class ShuyouquanViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    var tableview:UITableView?
+    
+    var NetData:JSON?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "书友圈"
         // Do any additional setup after loading the view.
+        NetData = []
+        self.setviews()
+        self.getData()
+        
+    }
+    
+    func setviews()
+    {
+        tableview = UITableView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+        tableview?.dataSource = self
+        tableview?.delegate = self
+        self.view.addSubview(tableview!)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (NetData?.count)!
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let identifier = "identtifier";
+        var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
+        if (cell == nil)
+        {
+            cell = ShuyouTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: identifier)
+    
+        }
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let mycell = cell as! ShuyouTableViewCell
+        let dic = NetData?[indexPath.row].dictionaryObject
+        mycell.setData(dat:dic as! [String : AnyObject])
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
 
+    func getData(){
+        
+        let qingqiu = serverUrl + "/api/circle/list"
+        
+        hkhttps.share.getRequest(urlstr: qingqiu, params: ["":""]) { (result, error) in
+            if result != nil
+            {
+                print(result!)
+                self.NetData = JSON(result?["dat"]! as Any)
+                self.tableview?.reloadData()
+            }
+
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
