@@ -42,6 +42,7 @@
 		2F379FBE1E6543830024732B /* Public.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Public.swift; sourceTree = "<group>"; };
 		2F379FC11E65447F0024732B /* hkhttps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hkhttps.swift; sourceTree = "<group>"; };
 		2FB290821E66A3E400E1CE46 /* ShuyouTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuyouTableViewCell.swift; sourceTree = "<group>"; };
+		2FFE1ACF1E714755004A0996 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
 		75E56379998537ABC6AFCF18 /* Pods-xuexi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuexi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xuexi/Pods-xuexi.debug.xcconfig"; sourceTree = "<group>"; };
 		D4D03BEBA44E1C9EB5E1AD6A /* Pods-xuexi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuexi.release.xcconfig"; path = "Pods/Target Support Files/Pods-xuexi/Pods-xuexi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +95,7 @@
 				2F379FA71E60131D0024732B /* LaunchScreen.storyboard */,
 				2F379FAA1E60131D0024732B /* Info.plist */,
 				2F379FBE1E6543830024732B /* Public.swift */,
+				2FFE1ACF1E714755004A0996 /* bridging.h */,
 			);
 			path = xuexi;
 			sourceTree = "<group>";
@@ -392,6 +394,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzhh.mpsb.xuexi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hekai/Documents/╭(╯^╰)╮/zixuelinchixuan/xuexi/bridging.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -406,6 +410,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzhh.mpsb.xuexi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hekai/Documents/╭(╯^╰)╮/zixuelinchixuan/xuexi/bridging.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

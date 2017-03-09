@@ -102,12 +102,14 @@ class BeitiekuViewController: UIViewController,UITableViewDelegate,UITableViewDa
         return head
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
-    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+      return 100
+//        return [tableView fd_heightForCellWithIdentifier:@"reuse identifer" configuration:^(id cell) {
+//            // Configure this cell with data, same as what you've done in "-tableView:cellForRowAtIndexPath:"
+//            // Like:
+//            //    cell.entity = self.feedEntities[indexPath.row];
+//   
     }
     
     

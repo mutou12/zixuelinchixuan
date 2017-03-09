@@ -30,6 +30,7 @@ class ShuyouquanViewController: UIViewController,UITableViewDelegate,UITableView
         tableview = UITableView(frame: CGRect(x: 0, y: 0, width: width, height: height))
         tableview?.dataSource = self
         tableview?.delegate = self
+        tableview?.rowHeight = 300
         self.view.addSubview(tableview!)
     }
     
@@ -43,11 +44,15 @@ class ShuyouquanViewController: UIViewController,UITableViewDelegate,UITableView
         if (cell == nil)
         {
             cell = ShuyouTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: identifier)
-    
         }
         return cell!
     }
     
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//       
+//        return  300
+//    }
+
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let mycell = cell as! ShuyouTableViewCell
         let dic = NetData?[indexPath.row].dictionaryObject

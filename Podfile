@@ -12,4 +12,5 @@ target 'xuexi' do
   pod 'Alamofire'
   pod 'SDWebImage'
   pod 'SwiftyJSON'
+  pod 'UITableView+FDTemplateLayoutCell'
 end

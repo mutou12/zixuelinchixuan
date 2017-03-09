@@ -23,6 +23,8 @@ class LinmoTableViewCell: UITableViewCell {
     {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         if !self.isEqual(nil){
+           
+            
             img = UIImageView(frame: CGRect(x: 0, y: -100, width: width, height: 500))
             img.contentMode = UIViewContentMode.scaleAspectFill;
             self.addSubview(img)
@@ -40,6 +42,8 @@ class LinmoTableViewCell: UITableViewCell {
         let urll = serverUrl+"/api/file/get?fid="+dic["pic"]!
         img.sd_setImage(with: URL(string: urll))
     }
+    
+  
     
     func cellOffset() {
         let toWindow = self.convert(self.bounds, to: self.window)
